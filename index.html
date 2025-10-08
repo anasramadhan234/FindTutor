@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorFinder - Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #c27ba0;
+    }
+
+    /* Hero Section */
+    #home {
+      padding: 120px 5% 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+    }
+    #home img {
+      width: 80%;
+      max-width: 400px;
+    }
+    #home h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+    #home p {
+      color: #555;
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+    .cta-btn {
+      background-color: #c27ba0;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #a85f87;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 100px 5%;
+    }
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p.section-sub {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    /* Service Section */
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .service-box {
+      width: 280px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    /* Experience Section */
+    .testimoni {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .testi-box {
+      width: 260px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #c27ba0;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <img src="33c7dda5-3f3f-48f2-bf04-a1f65d61e658.png" alt="TutorFinder Logo" style="width:60px;">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div>
+      <h1>Temukan Tutor Terbaikmu Sekarang</h1>
+      <p>Belajar jadi lebih mudah dan menyenangkan bersama TutorFinder — tempat di mana pelajar dan tutor profesional bertemu.</p>
+      <a href="https://wa.me/6281377971789?text=Halo%20TutorFinder%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20kursus." 
+         target="_blank" 
+         class="cta-btn">Hubungi via WhatsApp</a>
+    </div>
+    <div>
+      <img src="Ilustrasi.png" alt="Ilustrasi Hero">
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section id="service">
+    <h2>Layanan Kami</h2>
+    <p class="section-sub">Pilih cara belajar yang sesuai dengan kebutuhanmu.</p>
+    <div class="service-container">
+      <div class="service-box">
+        <h3>Private Class</h3>
+        <p>Belajar tatap muka secara intensif dengan tutor pilihanmu.</p>
+      </div>
+      <div class="service-box">
+        <h3>Online Course</h3>
+        <p>Kelas interaktif daring dengan materi terstruktur dan mudah diikuti.</p>
+      </div>
+      <div class="service-box">
+        <h3>Workshop</h3>
+        <p>Pelatihan singkat dengan praktik langsung dari ahlinya.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://wa.me/6281377971789?text=Halo%20TutorFinder%2C%20saya%20tertarik%20dengan%20layanan%20kursus%20Anda." 
+         target="_blank" 
+         class="cta-btn">Pesan Sekarang via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" style="background:#fff7fb;">
+    <h2>Students Experience</h2>
+    <p class="section-sub">Cerita sukses dari pengguna TutorFinder</p>
+    <div class="testimoni">
+      <div class="testi-box">
+        <p>"TutorFinder membantu saya memahami pelajaran lebih cepat!"</p>
+        <h4>- Aulia, Mahasiswa</h4>
+      </div>
+      <div class="testi-box">
+        <p>"Tutor yang profesional dan suasana belajarnya nyaman."</p>
+        <h4>- Kevin, Pelajar SMA</h4>
+      </div>
+      <div class="testi-box">
+        <p>"Materi kelas online-nya keren dan mudah dipahami!"</p>
+        <h4>- Nisa, Freelancer</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <div class="about">
+      <p>
+        TutorFinder adalah platform marketplace kursus dan les privat berbasis website yang mempertemukan murid, mahasiswa, dan tutor lokal dalam satu ruang belajar digital yang mudah, terstruktur, dan terpercaya.
+        Kami hadir karena banyak pelajar dan mahasiswa kesulitan menemukan kursus yang sesuai baik dari segi harga, lokasi, maupun kualitas tutor. Di sisi lain, banyak pengajar berbakat yang belum memiliki wadah profesional untuk mempromosikan keahliannya.
+      </p>
+      <p>
+        Siap untuk mulai perjalanan belajarmu? <br>Temukan tutor terbaik dan mulai kelas pertamamu sekarang!
+      </p>
+      <a href="https://wa.me/6281377971789?text=Halo%20TutorFinder%2C%20saya%20ingin%20mengetahui%20lebih%20tentang%20platform%20Anda." 
+         target="_blank" 
+         class="cta-btn">Pelajari Lebih Lanjut via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="background:#f8f8f8;">
+    <h2>Hubungi Kami</h2>
+    <p class="section-sub">Kami siap membantu kebutuhan belajarmu.</p>
+    <form class="contact-form">
+      <label>Nama:</label><br>
+      <input type="text" placeholder="Masukkan nama lengkap"><br>
+      <label>Email:</label><br>
+      <input type="email" placeholder="Masukkan email aktif"><br>
+      <label>Pesan:</label><br>
+      <textarea placeholder="Tulis pesanmu di sini"></textarea><br>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="https://wa.me/6281377971789?text=Halo%20TutorFinder%2C%20saya%20ingin%20menghubungi%20Anda%20lebih%20lanjut." 
+         target="_blank" 
+         class="cta-btn">Chat via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TutorFinder | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
